@@ -1,0 +1,40 @@
+<html>
+	<base href='/' />
+	<head>
+		<title>Angular2RC0Extangular</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+		<!-- 1. Load libraries -->
+			<!-- Polyfill(s) for older browsers -->
+		<script src="node_modules/es6-shim/es6-shim.min.js"></script>
+		<script src="node_modules/zone.js/dist/zone.js"></script>
+		<script src="node_modules/reflect-metadata/Reflect.js"></script>
+		<script src="node_modules/systemjs/dist/system.src.js"></script>
+		
+		<link rel="stylesheet" href="ext/ext-6.0.2/classic/theme-triton/resources/theme-triton-all.css"/>
+		<link rel="stylesheet" href="ext/ext-6.0.2/packages/pivot/build/classic/resources/pivot-all.css"/>
+		<script src="ext/ext-6.0.2/ext-all.js"></script>
+		<script src="ext/fittoparent.js"></script>
+		<script src="ext/ext-6.0.2/packages/pivot/build/pivot.js"></script>
+		
+		
+		<!-- 2. Configure SystemJS -->
+		<script src="systemjs.config.js"></script>
+		<script>
+			System.import('app').catch(function(err){ console.error(err.toString()); });
+		</script>
+	</head>
+	<!-- 3. Display the application -->
+	<body>
+		<my-app>
+			<div id="splash" style="margin-top:20%;font-family:Arial;font-size:72px;text-align:center;">
+				<div>LOADING...</div>		
+				<i class="fa fa-spinner fa-spin"></i>	
+			</div>
+		</my-app>
+	</body>
+</html>
